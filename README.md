@@ -173,3 +173,10 @@ This project demonstrates a complete DevOps workflow for a Ruby on Rails applica
 
 ---
 
+## Clone
+
+You can clone this repository using HTTPS:
+
+```sh
+git clone https://github.com/reddyharshavardhan/rails-app.git
+
