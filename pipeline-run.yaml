@@ -1,0 +1,25 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: build-and-push-run
+spec:
+  pipelineRef:
+    name: build-and-push-pipeline
+  workspaces:
+    - name: shared-workspace
+      volumeClaimTemplate:
+        metadata:
+          name: pipeline-workspace
+        spec:
+          accessModes: [ "ReadWriteOnce" ]
+          resources:
+            requests:
+              storage: 1Gi
+  params:
+    - name: GIT_URL
+      value: "https://github.com/reddyharshavardhan/rails-k8s-argocd-gitops.git"
+    - name: GIT_REVISION
+      value: "main"
+    - name: IMAGE
+      value: "docker.io/reddyharshavardhan/myapp:latest"
+  serviceAccountName: default
