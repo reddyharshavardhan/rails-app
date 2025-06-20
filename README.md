@@ -16,8 +16,7 @@ This project demonstrates a complete DevOps workflow for a Ruby on Rails applica
 - [Step 2: Kubernetes](#step-2-kubernetes)
 - [Step 3: ArgoCD (GitOps)](#step-3-argocd-gitops)
 - [Step 4: Tekton (CI/CD)](#step-4-tekton-cicd)
-- [Tips & Troubleshooting](#tips--troubleshooting)
-- [Project Structure](#project-structure)
+
 
 ---
 
@@ -174,24 +173,3 @@ This project demonstrates a complete DevOps workflow for a Ruby on Rails applica
 
 ---
 
-## Project Structure
-/
-├── Dockerfile
-├── docker-compose.yml
-├── config/
-│ └── database.yml
-├── rails-app.yaml
-├── argocd/
-│ ├── argocd-cm.yaml
-│ ├── argocd-rbac-cm.yaml
-│ ├── repository-secret.yaml
-│ └── application.yaml
-├── workspace-pvc.yaml
-├── git-clone.yaml
-├── build-and-push.yaml
-├── pipeline.yaml
-└── pipelinerun.yaml
-
-
-
----
