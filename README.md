@@ -26,8 +26,8 @@ This project demonstrates a complete DevOps workflow for a Ruby on Rails applica
 - [Docker](https://docs.docker.com/get-docker/)
 - [Minikube](https://minikube.sigs.k8s.io/docs/)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/)
-- [ArgoCD CLI](https://argo-cd.readthedocs.io/en/stable/cli_installation/) (optional)
-- [Tekton CLI](https://github.com/tektoncd/cli) (optional)
+- [ArgoCD CLI](https://argo-cd.readthedocs.io/en/stable/cli_installation/) 
+- [Tekton CLI](https://github.com/tektoncd/cli) 
 - [A Docker Hub account](https://hub.docker.com/)
 - [A GitHub account](https://github.com/)
 
